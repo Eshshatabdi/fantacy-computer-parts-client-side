@@ -7,7 +7,7 @@ const MyOrderDetail = ({ order, index }) => {
             <th>{index + 1}</th>
             <td>{itemName}</td>
             <td></td>
-            <td>Delete</td>
+            <td><button class='btn btn-xs btn-error'>Delete</button></td>
         </tr>
     );
 };

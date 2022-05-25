@@ -12,6 +12,7 @@ const OrderModel = ({ item, setItem, purchase }) => {
     const [user] = useAuthState(auth)
     const quantity = purchase.quantity * 1
     const availableQuantity = purchase.availableQuantity * 1
+    const price = purchase.price
 
 
 
@@ -24,12 +25,13 @@ const OrderModel = ({ item, setItem, purchase }) => {
 
         const itemName = name
 
+
         const inputQuantity = event.target.inputQuantity.value
         const email = user.email
         const userName = user.displayName
         const phone = event.target.phone.value
         const address = event.target.address.value
-        const order = { itemName, inputQuantity, email, userName, phone, address }
+        const order = { itemName, inputQuantity, email, userName, phone, price, address }
 
         if (inputQuantity < quantity || inputQuantity > availableQuantity) {
             toast.error(`cannot order less then ${quantity} and greater than ${availableQuantity}`)
