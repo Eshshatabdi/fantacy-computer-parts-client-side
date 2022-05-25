@@ -1,5 +1,5 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
+import React, { useEffect, useState } from 'react';
+
 import { toast } from 'react-toastify';
 import { useAuthState } from 'react-firebase-hooks/auth'
 import auth from '../../firebase.init';
@@ -7,6 +7,30 @@ import auth from '../../firebase.init';
 
 const MyProfile = () => {
     const [user] = useAuthState(auth)
+    const [updateProfil, setUpdateProfile] = useState('')
+    // useEffect(() => {
+    //     const email = user?.user?.email;
+    //     const currentUser = { email: email };
+    //     if (email) {
+    //         fetch(`http://localhost:5000/profile/${email}`, {
+    //             method: 'PUT',
+    //             headers: {
+    //                 'content-type': 'application/json'
+    //             },
+    //             body: JSON.stringify(currentUser)
+    //         })
+    //             .then(res => res.json())
+    //             .then(data => {
+
+    //                 setUpdateProfile(data)
+
+    //             })
+    //     }
+
+
+
+
+    // }, [user])
 
 
     const handleAdd = event => {
@@ -41,6 +65,27 @@ const MyProfile = () => {
 
             })
         event.target.reset();
+
+
+
+
+        const email = user?.user?.email;
+        const currentUser = { email: email };
+        if (email) {
+            fetch(`http://localhost:5000/profile/${email}`, {
+                method: 'PUT',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(currentUser)
+            })
+                .then(res => res.json())
+                .then(data => {
+
+                    setUpdateProfile(data)
+
+                })
+        }
 
 
     }

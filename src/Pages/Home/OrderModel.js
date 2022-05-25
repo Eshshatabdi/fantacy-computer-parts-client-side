@@ -10,6 +10,9 @@ const OrderModel = ({ item, setItem, purchase }) => {
 
     const { name, price } = purchase;
     const [user] = useAuthState(auth)
+    const quantity = purchase.quantity * 1
+    const availableQuantity = purchase.availableQuantity * 1
+
 
 
     const handleBooking = event => {
@@ -17,32 +20,41 @@ const OrderModel = ({ item, setItem, purchase }) => {
 
 
 
-        const order = {
 
-            itemName: name,
-            price,
-            quantity: event.target.quantity.value,
-            email: user.email,
-            userName: user.displayName,
-            phone: event.target.phone.value,
-            address: event.target.address.value
+
+        const itemName = name
+
+        const inputQuantity = event.target.inputQuantity.value
+        const email = user.email
+        const userName = user.displayName
+        const phone = event.target.phone.value
+        const address = event.target.address.value
+        const order = { itemName, inputQuantity, email, userName, phone, address }
+
+        if (inputQuantity < quantity || inputQuantity > availableQuantity) {
+            toast.error(`cannot order less then ${quantity} and greater than ${availableQuantity}`)
+
         }
-        fetch('http://localhost:5000/order', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(order)
-        })
-            .then(res => res.json())
-            .then(data => {
-
-
-                toast(`Booking is set`)
-                setItem(null);
-
+        else {
+            fetch('http://localhost:5000/order', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(order)
             })
-        event.target.reset();
+                .then(res => res.json())
+                .then(data => {
+
+
+                    toast(`Booking is set`)
+                    setItem(null);
+
+                })
+            event.target.reset();
+
+        }
+
 
 
     }
@@ -58,7 +70,7 @@ const OrderModel = ({ item, setItem, purchase }) => {
 
                         <input type="text" name="name" value={user?.displayName || ''} className="input input-bordered w-full max-w-xs" />
                         <input type="email" name="email" value={user?.email || ''} className="input input-bordered w-full max-w-xs" />
-                        <input type="number" name="quantity" className="input input-bordered w-full max-w-xs" />
+                        <input type="number" name="inputQuantity" placeholder='minimum order 1000 pc' className="input input-bordered w-full max-w-xs" />
 
 
                         <input type="number" name="phone" placeholder="Phone Number" className="input input-bordered w-full max-w-xs" />
