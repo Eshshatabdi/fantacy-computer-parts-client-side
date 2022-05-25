@@ -8,29 +8,6 @@ import auth from '../../firebase.init';
 const MyProfile = () => {
     const [user] = useAuthState(auth)
     const [updateProfil, setUpdateProfile] = useState('')
-    // useEffect(() => {
-    //     const email = user?.user?.email;
-    //     const currentUser = { email: email };
-    //     if (email) {
-    //         fetch(`http://localhost:5000/profile/${email}`, {
-    //             method: 'PUT',
-    //             headers: {
-    //                 'content-type': 'application/json'
-    //             },
-    //             body: JSON.stringify(currentUser)
-    //         })
-    //             .then(res => res.json())
-    //             .then(data => {
-
-    //                 setUpdateProfile(data)
-
-    //             })
-    //     }
-
-
-
-
-    // }, [user])
 
 
     const handleAdd = event => {
