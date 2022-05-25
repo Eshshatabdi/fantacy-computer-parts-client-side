@@ -1,6 +1,8 @@
 import React from 'react';
-import { FaArtstation } from 'react-icons/fa'
+import { BsFillAlarmFill } from 'react-icons/bs'
 import { FaCheckDouble } from 'react-icons/fa'
+import { BsFillStarFill } from 'react-icons/bs'
+
 
 const BusinessSummery = () => {
     return (
@@ -8,7 +10,7 @@ const BusinessSummery = () => {
             <div className="mt-5 text-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
 
                 <div className='card bg-base-200 shadow-lg'>
-                    <h3 className='flex justify-center'><FaArtstation /></h3>
+                    <h3 className='flex justify-center'><BsFillAlarmFill /></h3>
                     <h3 > 24/7</h3>
                     <p style={{ color: '#1400c6', fontSize: 'bold' }}
                         class="text-uppercase font-bold  ">Dedicated Support Team</p>
@@ -20,6 +22,7 @@ const BusinessSummery = () => {
                     <p style={{ color: '#1400c6', fontSize: 'bold' }} class="text-uppercase font-bold">Client Satisfaction</p>
                 </div>
                 <div className="card bg-base-200 shadow-lg">
+                    <h3 className='flex justify-center'><BsFillStarFill /></h3>
                     <h3>33k+</h3>
                     <p style={{ color: '#1400c6', fontSize: 'bold' }} class="text-uppercase font-bold">Reviews</p>
                 </div>
