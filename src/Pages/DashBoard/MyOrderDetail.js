@@ -1,11 +1,11 @@
 import React from 'react';
 
 const MyOrderDetail = ({ order, index }) => {
-    const { email } = order
+    const { itemName } = order
     return (
         <tr>
             <th>{index + 1}</th>
-            <td>{email}</td>
+            <td>{itemName}</td>
             <td></td>
         </tr>
     );

@@ -23,8 +23,8 @@ const MyOrders = () => {
                     <thead>
                         <tr>
                             <th>no</th>
-                            <th>email</th>
-                            <th>orders</th>
+                            <th>Name</th>
+                            <th>payment</th>
                             <th>delete</th>
 
                         </tr>
