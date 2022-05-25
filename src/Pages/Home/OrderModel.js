@@ -8,7 +8,7 @@ const OrderModel = ({ item, setItem, purchase }) => {
     const [update, setUpDate] = useState(1000)
 
 
-    const { name, price } = purchase;
+    const { name } = purchase;
     const [user] = useAuthState(auth)
     const quantity = purchase.quantity * 1
     const availableQuantity = purchase.availableQuantity * 1
