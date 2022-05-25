@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaArtstation } from 'react-icons/fa'
+import { FaCheckDouble } from 'react-icons/fa'
 
 const BusinessSummery = () => {
     return (
@@ -6,11 +8,14 @@ const BusinessSummery = () => {
             <div className="mt-5 text-center grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
 
                 <div className='card bg-base-200 shadow-lg'>
-                    <h3>24/7</h3>
+                    <h3 className='flex justify-center'><FaArtstation /></h3>
+                    <h3 > 24/7</h3>
                     <p style={{ color: '#1400c6', fontSize: 'bold' }}
                         class="text-uppercase font-bold  ">Dedicated Support Team</p>
                 </div>
                 <div className="card bg-base-200 shadow-lg">
+                    <h3 className='flex justify-center'><FaCheckDouble /></h3>
+
                     <h3>10000+</h3>
                     <p style={{ color: '#1400c6', fontSize: 'bold' }} class="text-uppercase font-bold">Client Satisfaction</p>
                 </div>
@@ -19,6 +24,7 @@ const BusinessSummery = () => {
                     <p style={{ color: '#1400c6', fontSize: 'bold' }} class="text-uppercase font-bold">Reviews</p>
                 </div>
             </div>
+
 
 
         </div>
