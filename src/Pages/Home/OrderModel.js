@@ -76,7 +76,7 @@ const OrderModel = ({ item, setItem, purchase }) => {
                         <input type="number" name="phone" placeholder="Phone Number" className="input input-bordered w-full max-w-xs" />
                         <input type="text" name="address" placeholder="Address" className="input input-bordered w-full max-w-xs" />
 
-                        <input type="submit" value="Submit" className="btn btn-secondary w-full max-w-xs" />
+                        <input type="submit" value="Order" className="btn btn-secondary w-full max-w-xs" />
                     </form>
                 </div>
             </div>

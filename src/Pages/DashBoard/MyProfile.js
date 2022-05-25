@@ -35,13 +35,7 @@ const MyProfile = () => {
 
     const handleAdd = event => {
         event.preventDefault();
-
-
-
         const profile = {
-
-
-
             email: user.email,
             userName: user.displayName,
             phone: event.target.phone.value,

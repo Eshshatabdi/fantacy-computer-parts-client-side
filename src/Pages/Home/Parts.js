@@ -16,7 +16,7 @@ const Parts = () => {
             </h2>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                 {
-                    parts.reverse().slice(0, 3).map(part => <Part
+                    [...parts].reverse().slice(0, 3).map(part => <Part
                         key={part._id}
                         part={part}>
                     </Part>)
