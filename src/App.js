@@ -22,6 +22,7 @@ import MyOrders from './Pages/DashBoard/MyOrders';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import MyProfile from './Pages/DashBoard/MyProfile';
 import ManageProduct from './Pages/DashBoard/ManageProduct';
+import Payment from './Pages/DashBoard/ManageProduct';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path='/dashboard' element={<RequireAuth><DashBoard></DashBoard> </RequireAuth>}>
           <Route index element={<MyProfile></MyProfile>}></Route>
           <Route path='addreview' element={<AddReview></AddReview>}></Route>
+          <Route path='payment/:id' element={<Payment></Payment>}></Route>
 
           <Route path='myorder' element={<MyOrders></MyOrders>}></Route>
           <Route path='addproduct' element={<AddProduct></AddProduct>}></Route>
