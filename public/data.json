@@ -1,0 +1,56 @@
+[
+    {
+        "_id": "628a5f9635754d2cfcaf69db",
+        "img": "https://i.ibb.co/RC31gk9/Motherboard.png",
+        "price": 36,
+        "quantity": 1000,
+        "name": "Motherboard",
+        "availableQuantity": 10000,
+        "description": "The motherboard is one of expensive unit as it is the main circuit that enables the integration or you can say hold all the components of a computer. "
+    },
+    {
+        "_id": "628a5f96066e3317f1156b1b",
+        "img": "https://i.ibb.co/5MBrpRt/Processor.png",
+        "price": 32,
+        "quantity": 1000,
+        "name": "Processor",
+        "availableQuantity": 12019,
+        "description": "The processor is the most important component inserted into the CPU socket on the motherboard, present in the computer case. "
+    },
+    {
+        "_id": "628a5f9648da37235db49c98",
+        "img": "https://i.ibb.co/89pTb5W/Harddisk-drive.png",
+        "price": 34,
+        "quantity": 1000,
+        "name": "Hard Disk",
+        "availableQuantity": 17443,
+        "description": "The hard drive or HDD is one of the computer storage devices that can store any kind of digital information based on magnetic technology. As well a Hard drive is a ROM Memory of computers."
+    },
+    {
+        "_id": "628a5f960e512e3bb66e3817",
+        "img": "http://placehold.it/32x32",
+        "price": 23,
+        "quantity": 1000,
+        "name": "Downs Rose",
+        "availableQuantity": 18757,
+        "description": "Commodo adipisicing eiusmod do _id. Exercitation cillum do ullamco anim aliqua ut dolor enim commodo anim reprehenderit. Reprehenderit magna et sint adipisicing reprehenderit fugiat pariatur qui occaecat nostrud aliquip magna. Pro_ident nisi velit duis tempor sit. Aute cillum esse dolore ex inc_id_idunt dolore occaecat. Aliquip duis exercitation sit aliquip cillum eu inc_id_idunt est.\r\n"
+    },
+    {
+        "_id": "628a5f9627cbf0dc1a72d264",
+        "img": "http://placehold.it/32x32",
+        "price": 25,
+        "quantity": 1000,
+        "name": "Hewitt Knox",
+        "availableQuantity": 12450,
+        "description": ""
+    },
+    {
+        "_id": "628a5f96ec69a031edea2fe0",
+        "img": "http://placehold.it/32x32",
+        "price": 38,
+        "quantity": 1000,
+        "name": "Gallegos Acevedo",
+        "availableQuantity": 19554,
+        "description": "Inc_id_idunt commodo adipisicing ea duis aliqua enim cillum minim Lorem laboris. Laborum inc_id_idunt esse culpa et duis fugiat exercitation aute cillum dolor qui sunt. Anim commodo in minim ullamco pariatur consequat eu qui veniam laboris.\r\n"
+    }
+]
