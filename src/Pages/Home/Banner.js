@@ -10,10 +10,10 @@ const Banner = () => {
 
         }}
         >
-            <div className='flex-1 p-5 '>
-                <h3 className='text-xl text-primary font-bold mt-5 '>Manufacturer</h3>
+            <div className='flex-1 p-12 '>
+                <h3 className='text-xl text-white font-bold mt-5 '>Computer Manufacturer Industry</h3>
 
-                <p className='text-white pb-5 font-bold w-1/3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente earum ab cupiditate autem accusantium expedita.</p>
+                <p className='text-white pb-5 font-bold w-1/3'>Reliability and customer satisfaction is our first priority</p>
 
             </div>
 
