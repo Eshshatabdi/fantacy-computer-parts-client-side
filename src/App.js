@@ -22,7 +22,7 @@ import MyOrders from './Pages/DashBoard/MyOrders';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import MyProfile from './Pages/DashBoard/MyProfile';
 import ManageProduct from './Pages/DashBoard/ManageProduct';
-import Payment from './Pages/DashBoard/ManageProduct';
+import Payment from './Pages/DashBoard/Payment';
 
 function App() {
   return (

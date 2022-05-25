@@ -7,7 +7,7 @@ const MyOrderDetail = ({ order, index }) => {
         <tr>
             <th>{index + 1}</th>
             <td>{itemName}</td>
-            <td>{(price && !order.paid) && <Link to={`/dashboard/payment/${_id}`}><button className='btn btn-success'>pay</button></Link>}
+            <td>{(price && !order.paid) && <Link to={`/dashboard/payment/${order._id}`}><button className='btn btn-success'>pay</button></Link>}
                 {(price && order.paid) && <span className='btn btn-xs btn-success'>paid</span>}
             </td>
 
