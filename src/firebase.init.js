@@ -13,12 +13,7 @@ const firebaseConfig = {
     messagingSenderId: process.env.REACT_APP_messagingSenderId,
     appId: process.env.REACT_APP_appId
 
-    // apiKey: "AIzaSyAArteN2ReaASs5_zJaxYmbIbxUedJ7ltI",
-    // authDomain: "final-website-b7c99.firebaseapp.com",
-    // projectId: "final-website-b7c99",
-    // storageBucket: "final-website-b7c99.appspot.com",
-    // messagingSenderId: "34798804248",
-    // appId: "1:34798804248:web:29a6962f0a2d92ff57926d"
+
 };
 
 // Initialize Firebase

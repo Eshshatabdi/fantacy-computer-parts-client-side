@@ -21,6 +21,7 @@ import MakeAdmin from './Pages/DashBoard/MakeAdmin';
 import MyOrders from './Pages/DashBoard/MyOrders';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import MyProfile from './Pages/DashBoard/MyProfile';
+import ManageProduct from './Pages/DashBoard/ManageProduct';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path='myorder' element={<MyOrders></MyOrders>}></Route>
           <Route path='addproduct' element={<AddProduct></AddProduct>}></Route>
           <Route path='manageorder' element={<ManageOrders></ManageOrders>}></Route>
+          <Route path='manageproduct' element={<ManageProduct></ManageProduct>}></Route>
           <Route path='makeadmin' element={<MakeAdmin></MakeAdmin>}></Route>
 
 
