@@ -23,34 +23,7 @@ const Purchase = () => {
 
 
 
-    // const handledecreaseQuantity = () => {
 
-    //     const newQuantity = (parseInt(purchase.quantity) - 1);
-    //     const updateQuantity = { newQuantity }
-    //     const url = ` https://limitless-spire-51674.herokuapp.com/service/${id}`
-    //     fetch(url, {
-    //         method: 'PUT',
-    //         headers: {
-    //             'content-type': 'application/json'
-
-    //         },
-    //         body: JSON.stringify(updateQuantity)
-
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-
-    //             setUpdate(data)
-    //             alert('quantity updated')
-    //         })
-
-    //     if (newQuantity === 0) {
-
-    //         // return toast('sold out')
-    //     }
-
-
-    // }
     return (
         <div className="card lg:max-w-96 mt-12 bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
@@ -64,7 +37,7 @@ const Purchase = () => {
                 <p>Available Quantity:{purchase.availableQuantity}</p>
                 <div className="card-actions">
                     {/* <button className="btn btn-primary">place order</button> */}
-                    <label htmlFor="order-modal" onClick={() => setItem(purchase._id)} className="btn btn-primary">place order</label>
+                    <label htmlhtmlFor="order-modal" onClick={() => setItem(purchase._id)} className="btn btn-primary">place order</label>
                 </div>
 
 

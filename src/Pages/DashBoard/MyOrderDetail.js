@@ -22,7 +22,7 @@ const MyOrderDetail = ({ order, index, setDeletingOrder }) => {
 
 
 
-                    <label onClick={() => setDeletingOrder(order)} for='delete-confirm-modal' className='btn btn-xs btn-error'>Delete</label>}
+                    <label onClick={() => setDeletingOrder(order)} htmlFor='delete-confirm-modal' className='btn btn-xs btn-error'>Delete</label>}
 
             </td>
 

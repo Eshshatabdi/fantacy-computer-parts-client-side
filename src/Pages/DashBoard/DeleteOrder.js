@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const DeleteOrder = ({ deletingOrder, setDeletingOrder }) => {
     const { itemName, email } = deletingOrder
     const handleDelete = () => {
-        fetch(`http://localhost:5000/order/${email}`, {
+        fetch(` https://limitless-spire-51674.herokuapp.com/order/${email}`, {
             method: 'DELETE',
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -20,14 +20,14 @@ const DeleteOrder = ({ deletingOrder, setDeletingOrder }) => {
     }
     return (
         <div>
-            <input type="checkbox" id="delete-confirm-modal" class="modal-toggle" />
-            <div class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                    <h3 class="font-bold text-lg text-red-500">Are you sure you want to delete{itemName}!</h3>
-                    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-                    <div class="modal-action">
+            <input type="checkbox" id="delete-confirm-modal" className="modal-toggle" />
+            <div className="modal modal-bottom sm:modal-middle">
+                <div className="modal-box">
+                    <h3 className="font-bold text-lg text-red-500">Are you sure you want to delete{itemName}!</h3>
+                    <p className="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                    <div className="modal-action">
                         <button onClick={() => handleDelete()} className='btn btn-xs btn-error'>Delete</button>
-                        <label for="delete-confirm-modal" class="btn btn-xs">Cancel</label>
+                        <label htmlFor="delete-confirm-modal" className="btn btn-xs">Cancel</label>
                     </div>
                 </div>
             </div>
