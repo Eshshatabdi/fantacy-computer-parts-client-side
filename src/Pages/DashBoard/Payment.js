@@ -4,7 +4,8 @@ import { useParams } from 'react-router-dom';
 import Loading from '../SharedPage/Loading';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
-// import CheckoutForm from './CheckoutForm';
+import CheckoutForm from './CheckoutForm';
+
 
 const stripePromise = loadStripe('pk_test_51L3TpSLKxmai84Utnt7arSKYE6KmWNz3YvyDJf6WrwHHHVLadk8TlpGRcSUgbX1UA3vyKLFTewSGLRjK7XQ2nn6b00IXFCJLbl');
 const Payment = () => {
