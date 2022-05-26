@@ -38,7 +38,7 @@ const OrderModel = ({ item, setItem, purchase }) => {
 
         }
         else {
-            fetch('http://localhost:5000/order', {
+            fetch(' https://limitless-spire-51674.herokuapp.com/order', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

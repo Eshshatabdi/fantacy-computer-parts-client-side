@@ -4,7 +4,7 @@ import OrderDetail from './OrderDetail';
 const ManageOrders = () => {
     const [orders, setOrders] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/order')
+        fetch(' https://limitless-spire-51674.herokuapp.com/order')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])

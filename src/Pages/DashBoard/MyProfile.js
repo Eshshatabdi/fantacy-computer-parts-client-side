@@ -20,7 +20,7 @@ const MyProfile = () => {
             location: event.target.location.value,
             linkedinprofile: event.target.linkedinprofile.value
         }
-        fetch('http://localhost:5000/profile', {
+        fetch(' https://limitless-spire-51674.herokuapp.com/profile', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -43,7 +43,7 @@ const MyProfile = () => {
         const email = user?.user?.email;
         const currentUser = { email: email };
         if (email) {
-            fetch(`http://localhost:5000/profile/${email}`, {
+            fetch(` https://limitless-spire-51674.herokuapp.com/profile/${email}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

@@ -10,7 +10,7 @@ const Purchase = () => {
 
 
     useEffect(() => {
-        const url = (`http://localhost:5000/service/${id}`)
+        const url = (` https://limitless-spire-51674.herokuapp.com/service/${id}`)
         fetch(url)
             .then(res => res.json())
             .then(data => setPurchase(data))
@@ -27,7 +27,7 @@ const Purchase = () => {
 
     //     const newQuantity = (parseInt(purchase.quantity) - 1);
     //     const updateQuantity = { newQuantity }
-    //     const url = `http://localhost:5000/service/${id}`
+    //     const url = ` https://limitless-spire-51674.herokuapp.com/service/${id}`
     //     fetch(url, {
     //         method: 'PUT',
     //         headers: {

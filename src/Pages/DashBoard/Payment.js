@@ -10,7 +10,7 @@ import CheckoutForm from './CheckoutForm';
 const stripePromise = loadStripe('pk_test_51L3TpSLKxmai84Utnt7arSKYE6KmWNz3YvyDJf6WrwHHHVLadk8TlpGRcSUgbX1UA3vyKLFTewSGLRjK7XQ2nn6b00IXFCJLbl');
 const Payment = () => {
     const { id } = useParams()
-    const url = `http://localhost:5000/orders/${id}`;
+    const url = ` https://limitless-spire-51674.herokuapp.com/orders/${id}`;
     const { data: order, isLoading } = useQuery(['orders', id], () => fetch(url, {
         method: 'GET',
         headers: {

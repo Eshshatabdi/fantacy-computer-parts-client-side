@@ -9,7 +9,7 @@ import { useQuery } from 'react-query';
 const AddProduct = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const { data: services, isLoading } = useQuery('services', () => fetch('http://localhost:5000/service').then(res => res.json()))
+    const { data: services, isLoading } = useQuery('services', () => fetch(' https://limitless-spire-51674.herokuapp.com/service').then(res => res.json()))
 
     const imageStorageKey = '86570ec4198722e73cbd93b9c7980685';
 
@@ -41,7 +41,7 @@ const AddProduct = () => {
 
 
                     // send to your database 
-                    fetch('http://localhost:5000/service', {
+                    fetch(' https://limitless-spire-51674.herokuapp.com/service', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

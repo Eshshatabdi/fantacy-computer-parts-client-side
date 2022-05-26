@@ -8,8 +8,13 @@ const MyPortfolio = () => {
                     <h2 className="card-title">Shatabdi ESh Chowdhury</h2>
                     <h2 className="card-title">eshshatabdi@gmail.com</h2>
                     <p>Educational Background:Master's complete</p>
-                    <p> List of Technologies:</p>
-                    <p>Projects:</p>
+                    <p> List of Technologies:know about java script,</p>
+                    <p> List of Technologies:know about  react,</p>
+                    <p> List of Technologies:know about  css libraries,</p>
+                    <p> List of Technologies:know about lots of framework,</p>
+                    <p>Projects:1. https://dream-laptop.netlify.app</p>
+                    <p>2.https://authentication-assignmen-7c87c.firebaseapp.com/</p>
+                    <p>3.https://warehouse-management-739be.web.app/</p>
 
                 </div>
             </div>
