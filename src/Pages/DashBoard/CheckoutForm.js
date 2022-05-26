@@ -7,9 +7,10 @@ const CheckoutForm = ({ order }) => {
     const elements = useElements();
     const [cardError, setCardError] = useState('')
     const [success, setSuccess] = useState('')
+    const [processing, setProcessing] = useState(false)
     const [transactionId, setTransactionId] = useState('')
     const [clientSecret, setClientSecret] = useState('');
-    const { price, email, userName } = order;
+    const { _id, price, email, userName } = order;
 
 
 
@@ -51,6 +52,7 @@ const CheckoutForm = ({ order }) => {
 
         setCardError(error?.message || '')
         setSuccess('')
+        setProcessing(true);
 
 
 
@@ -71,6 +73,7 @@ const CheckoutForm = ({ order }) => {
 
         if (intentError) {
             setCardError(intentError?.message);
+            setProcessing(false);
 
         }
         else {
@@ -78,6 +81,24 @@ const CheckoutForm = ({ order }) => {
             setTransactionId(paymentIntent.id)
             console.log(paymentIntent);
             setSuccess('Congratulation your payment is completed')
+
+
+            const payment = {
+                order: _id,
+                transactionId: paymentIntent.id
+            }
+
+            fetch(`http://localhost:5000/orders/${_id}`, {
+                method: 'PATCH',
+                headers: {
+                    'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+                },
+                body: JSON.stringify(payment)
+            }).then(res => res.json())
+                .then(data => {
+                    setProcessing(false);
+                    console.log(data)
+                })
         }
 
 
