@@ -13,18 +13,18 @@ const BusinessSummery = () => {
                     <h3 className='flex justify-center'><BsFillAlarmFill /></h3>
                     <h3 > 24/7</h3>
                     <p style={{ color: '#1400c6', fontSize: 'bold' }}
-                        class="text-uppercase font-bold  ">Dedicated Support Team</p>
+                        className="text-uppercase font-bold  ">Dedicated Support Team</p>
                 </div>
                 <div className="card bg-base-200 shadow-lg">
                     <h3 className='flex justify-center'><FaCheckDouble /></h3>
 
                     <h3>10000+</h3>
-                    <p style={{ color: '#1400c6', fontSize: 'bold' }} class="text-uppercase font-bold">Client Satisfaction</p>
+                    <p style={{ color: '#1400c6', fontSize: 'bold' }} className="text-uppercase font-bold">Client Satisfaction</p>
                 </div>
                 <div className="card bg-base-200 shadow-lg">
                     <h3 className='flex justify-center'><BsFillStarFill /></h3>
                     <h3>33k+</h3>
-                    <p style={{ color: '#1400c6', fontSize: 'bold' }} class="text-uppercase font-bold">Reviews</p>
+                    <p style={{ color: '#1400c6', fontSize: 'bold' }} className="text-uppercase font-bold">Reviews</p>
                 </div>
             </div>
 

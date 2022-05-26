@@ -52,19 +52,19 @@ const Purchase = () => {
 
     // }
     return (
-        <div class="card lg:max-w-96 mt-12 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-                <img src={purchase.img} alt="" class="rounded-xl" />
+        <div className="card lg:max-w-96 mt-12 bg-base-100 shadow-xl">
+            <figure className="px-10 pt-10">
+                <img src={purchase.img} alt="" className="rounded-xl" />
             </figure>
-            <div class="card-body items-center text-center">
-                <h2 class="card-title">{purchase.name}</h2>
+            <div className="card-body items-center text-center">
+                <h2 className="card-title">{purchase.name}</h2>
                 <p>Price:${purchase.price}/per unit</p>
                 <p>{purchase.description}</p>
                 <p>Minimun Order Quantity:{purchase.quantity}</p>
                 <p>Available Quantity:{purchase.availableQuantity}</p>
-                <div class="card-actions">
-                    {/* <button class="btn btn-primary">place order</button> */}
-                    <label htmlFor="order-modal" onClick={() => setItem(purchase._id)} class="btn btn-primary">place order</label>
+                <div className="card-actions">
+                    {/* <button className="btn btn-primary">place order</button> */}
+                    <label htmlFor="order-modal" onClick={() => setItem(purchase._id)} className="btn btn-primary">place order</label>
                 </div>
 
 

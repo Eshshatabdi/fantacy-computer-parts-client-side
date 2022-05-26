@@ -63,7 +63,7 @@ const OrderModel = ({ item, setItem, purchase }) => {
 
     return (
         <div>
-            <input type="checkbox" id="order-modal" class="modal-toggle" />
+            <input type="checkbox" id="order-modal" className="modal-toggle" />
             <div className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
                     <label for="order-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
