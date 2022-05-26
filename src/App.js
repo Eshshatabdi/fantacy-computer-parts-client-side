@@ -23,6 +23,7 @@ import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import MyProfile from './Pages/DashBoard/MyProfile';
 import ManageProduct from './Pages/DashBoard/ManageProduct';
 import Payment from './Pages/DashBoard/Payment';
+import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
 
 
         }></Route>
+        <Route path='/blog' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
