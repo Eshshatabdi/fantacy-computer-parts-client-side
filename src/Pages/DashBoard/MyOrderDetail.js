@@ -8,7 +8,10 @@ const MyOrderDetail = ({ order, index }) => {
             <th>{index + 1}</th>
             <td>{itemName}</td>
             <td>{(price && !order.paid) && <Link to={`/dashboard/payment/${order._id}`}><button className='btn btn-success'>pay</button></Link>}
-                {(price && order.paid) && <span className='btn btn-xs btn-success'>paid</span>}
+                {(price && order.paid) && <div>
+                    <p><span className='text-success'>Paid</span></p>
+                    <p>Transaction id: <span className='text-success'>{order.transactionId}</span></p>
+                </div>}
             </td>
 
 
