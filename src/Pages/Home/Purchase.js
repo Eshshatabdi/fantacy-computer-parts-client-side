@@ -37,7 +37,7 @@ const Purchase = () => {
                 <p>Available Quantity:{purchase.availableQuantity}</p>
                 <div className="card-actions">
                     {/* <button className="btn btn-primary">place order</button> */}
-                    <label htmlhtmlFor="order-modal" onClick={() => setItem(purchase._id)} className="btn btn-primary">place order</label>
+                    <label htmlFor="order-modal" onClick={() => setItem(purchase._id)} className="btn btn-primary">place order</label>
                 </div>
 
 
