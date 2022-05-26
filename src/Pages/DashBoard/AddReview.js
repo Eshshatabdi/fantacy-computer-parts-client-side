@@ -12,7 +12,7 @@ const AddReview = () => {
 
         const getData = {
             name: data.name,
-            rating: data.rating <= 5 ? data.rating : 'give rating out of 5 ',
+            rating: data.rating,
             description: data.description,
             image: data.image
         }
@@ -70,6 +70,8 @@ const AddReview = () => {
                             </label>
                             <input
                                 type="number"
+                                min='1'
+                                max='5'
                                 placeholder="Rating"
                                 className="input input-bordered w-full max-w-xs"
                                 {...register("rating", {

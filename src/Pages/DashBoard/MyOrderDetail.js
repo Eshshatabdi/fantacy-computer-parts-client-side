@@ -12,11 +12,12 @@ const MyOrderDetail = ({ order, index }) => {
                     <p><span className='text-success'>Paid</span></p>
                     <p>Transaction id: <span className='text-success'>{order.transactionId}</span></p>
                 </div>}
+                {(price && order.paid) || <button className='btn btn-xs btn-error'>Delete</button>}
             </td>
 
 
 
-            <td><button className='btn btn-xs btn-error'>Delete</button></td>
+            {/* <td><button className='btn btn-xs btn-error'>Delete</button></td> */}
         </tr>
     );
 };

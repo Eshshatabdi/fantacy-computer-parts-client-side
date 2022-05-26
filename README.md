@@ -1,4 +1,25 @@
-# Getting Started with Create React App
+# 
+## Fantacy Computer Parts Manufacturer
+## live link:https://final-website-b7c99.web.app/contact
+
+## 
+* header,banner,product,footer done in home page.
+* in purchase page product detail information show.
+* My portfolio and blog are shown
+* In dashBoard make admin,add product,manage product,manageorder,my order shown
+* there is a login and sign up page and also google log in.
+
+## List of Technologies
+
+* React
+* react router
+* react firebse hooks
+* react hook form
+* react icon 
+* react query
+* firebase
+* tailwind daisyUi
+* react toastify
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

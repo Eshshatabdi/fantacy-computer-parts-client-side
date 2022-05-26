@@ -28,49 +28,53 @@ import RequireAdmin from './Pages/Login/RequireAdmin';
 
 function App() {
   return (
-    <div className='max-w-7xl mx-auto px-12' >
+    <div >
       <Header></Header>
-      <Routes>
-
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/myportfolio' element={<MyPortfolio></MyPortfolio>}></Route>
-        <Route path='/dashboard' element={<DashBoard></DashBoard>}>
-          <Route index element={<MyProfile></MyProfile>}></Route>
-          <Route path='addreview' element={<AddReview></AddReview>}></Route>
-          <Route path='payment/:id' element={<Payment></Payment>}></Route>
-
-          <Route path='myorder' element={<MyOrders></MyOrders>}></Route>
-          <Route path='addproduct' element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>
-          <Route path='manageorder' element={<ManageOrders></ManageOrders>}></Route>
-          <Route path='manageproduct' element={<ManageProduct></ManageProduct>}></Route>
-          <Route path='makeadmin' element={<RequireAdmin><MakeAdmin></MakeAdmin></RequireAdmin>}></Route>
+      <div className='max-w-7xl mx-auto px-12' >
 
 
+        <Routes>
 
-        </Route>
-        <Route path='/purchase/:id' element={
-          <RequireAuth><Purchase></Purchase></RequireAuth>
+          <Route path='/' element={<Home></Home>}></Route>
+          <Route path='/home' element={<Home></Home>}></Route>
+          <Route path='/myportfolio' element={<MyPortfolio></MyPortfolio>}></Route>
+          <Route path='/dashboard' element={<DashBoard></DashBoard>}>
+            <Route index element={<MyProfile></MyProfile>}></Route>
+            <Route path='addreview' element={<AddReview></AddReview>}></Route>
+            <Route path='payment/:id' element={<Payment></Payment>}></Route>
 
-
-        }></Route>
-        <Route path='/blog' element={<Blogs></Blogs>}></Route>
-        <Route path='/login' element={<Login></Login>}></Route>
-        <Route path='/signup' element={<SignUp></SignUp>}></Route>
-        <Route path='*' element={<NotFound></NotFound>}></Route>
+            <Route path='myorder' element={<MyOrders></MyOrders>}></Route>
+            <Route path='addproduct' element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>
+            <Route path='manageorder' element={<RequireAdmin><ManageOrders></ManageOrders></RequireAdmin>}></Route>
+            <Route path='manageproduct' element={<RequireAdmin><ManageProduct></ManageProduct></RequireAdmin>}></Route>
+            <Route path='makeadmin' element={<RequireAdmin><MakeAdmin></MakeAdmin></RequireAdmin>}></Route>
 
 
 
+          </Route>
+          <Route path='/purchase/:id' element={
+            <RequireAuth><Purchase></Purchase></RequireAuth>
 
 
-      </Routes>
-      <Footer></Footer>
+          }></Route>
+          <Route path='/blog' element={<Blogs></Blogs>}></Route>
+          <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/signup' element={<SignUp></SignUp>}></Route>
+          <Route path='*' element={<NotFound></NotFound>}></Route>
 
 
-      <ToastContainer />
 
 
-    </div>
+
+        </Routes>
+        <Footer></Footer>
+
+
+        <ToastContainer />
+
+
+      </div>
+    </div >
   );
 }
 
