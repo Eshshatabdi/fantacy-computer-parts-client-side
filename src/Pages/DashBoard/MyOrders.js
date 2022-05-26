@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import DeleteOrder from './DeleteOrder';
 import MyOrderDetail from './MyOrderDetail';
 
 const MyOrders = () => {
     const [order] = useAuthState(auth)
     const [orders, setOrders] = useState([])
+    const [deletingOrder, setDeletingOrder] = useState(null);
     useEffect(() => {
         const email = order?.email;
         fetch(` https://limitless-spire-51674.herokuapp.com/orders?email=${email}`)
             .then(res => res.json())
             .then(data => setOrders(data))
-    }, [order])
+    }, [order, orders, deletingOrder])
 
 
     return (
@@ -25,7 +27,7 @@ const MyOrders = () => {
                             <th>no</th>
                             <th>Name</th>
                             <th>payment</th>
-                            <th>Action</th>
+
 
                         </tr>
                     </thead>
@@ -35,6 +37,7 @@ const MyOrders = () => {
                                 index={index}
 
                                 order={order}
+                                setDeletingOrder={setDeletingOrder}
 
                             ></MyOrderDetail>)
                         }
@@ -42,6 +45,18 @@ const MyOrders = () => {
                     </tbody>
                 </table>
             </div>
+            {
+                deletingOrder && <DeleteOrder
+
+
+                    deletingOrder={deletingOrder}
+
+                    setDeletingOrder={setDeletingOrder}
+
+
+                >
+                </DeleteOrder>
+            }
 
         </div>
     );

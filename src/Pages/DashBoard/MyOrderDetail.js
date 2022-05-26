@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
-const MyOrderDetail = ({ order, index }) => {
-    const { _id, itemName, price } = order
+const MyOrderDetail = ({ order, index, setDeletingOrder }) => {
+    const { _id, itemName, price, email } = order
+
+
+
     return (
         <tr>
             <th>{index + 1}</th>
@@ -12,12 +16,19 @@ const MyOrderDetail = ({ order, index }) => {
                     <p><span className='text-success'>Paid</span></p>
                     <p>Transaction id: <span className='text-success'>{order.transactionId}</span></p>
                 </div>}
-                {(price && order.paid) || <button className='btn btn-xs btn-error'>Delete</button>}
+                {(price && order.paid) ||
+
+
+
+
+
+                    <label onClick={() => setDeletingOrder(order)} for='delete-confirm-modal' className='btn btn-xs btn-error'>Delete</label>}
+
             </td>
 
 
 
-            {/* <td><button className='btn btn-xs btn-error'>Delete</button></td> */}
+
         </tr>
     );
 };

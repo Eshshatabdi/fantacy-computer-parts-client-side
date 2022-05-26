@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className='flex h-screen justify-center items-center'>
+        <div className='flex justify-center items-center'>
             <div className="card  bg-base-100 shadow-xl">
                 <div className="card-body">
                     <h2 className="card-title text-success">1.How will you improve the performance of a react application?</h2>
