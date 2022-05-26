@@ -12,7 +12,7 @@ const Part = ({ part }) => {
     return (
         <div className="card lg:max-w-lg  bg-base-100 shadow-xl">
             <figure className="px-10 pt-10 h-3/6">
-                <img className='bg-base-200' src={img} alt="" className="rounded-xl" />
+                <img className='bg-base-200 rounded-xl' src={img} alt="" />
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{name}</h2>

@@ -14,7 +14,7 @@ const Header = () => {
 
         <li><Link to="/myportfolio">My Portfolio</Link></li>
         <li><Link to="/blog">Blogs</Link></li>
-        {/* <li><Link to="/about">My Portfolio</Link></li> */}
+
         {
             user && <li><Link to="/dashboard">DashBoard</Link></li>
         }
@@ -27,7 +27,7 @@ const Header = () => {
 
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-200">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ const Header = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Manufacture</a>
+                <a className="btn btn-ghost normal-case text-primary text-xl">Fantacy computer parts Manufacture</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
