@@ -88,7 +88,7 @@ const CheckoutForm = ({ order }) => {
                 transactionId: paymentIntent.id
             }
 
-            fetch(` https://limitless-spire-51674.herokuapp.com/orders/${_id}`, {
+            fetch(`https://limitless-spire-51674.herokuapp.com/orders/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`

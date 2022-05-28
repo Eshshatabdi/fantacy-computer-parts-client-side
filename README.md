@@ -1,13 +1,25 @@
 # 
-## Fantacy Computer Parts Manufacturer
+## Fantacy Computer Parts 
 ## live link:https://final-website-b7c99.web.app/contact
 
-## 
+## Client Side
 * header,banner,product,footer done in home page.
 * in purchase page product detail information show.
 * My portfolio and blog are shown
 * In dashBoard make admin,add product,manage product,manageorder,my order shown
 * there is a login and sign up page and also google log in.
+
+
+
+## Server Side
+
+* Use get post put or patch and delete method
+* apply get to get data from database
+* apply post to post data in database
+* Apply put to update
+* apply Delete to delete data.
+
+
 
 ## List of Technologies
 
