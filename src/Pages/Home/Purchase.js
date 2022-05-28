@@ -26,7 +26,7 @@ const Purchase = () => {
 
     return (
         <div className="card lg:max-w-96 mt-12 bg-base-100 shadow-xl">
-            <figure className="px-10 pt-10">
+            <figure className="">
                 <img src={purchase.img} alt="" className="rounded-xl" />
             </figure>
             <div className="card-body items-center text-center">

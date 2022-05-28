@@ -6,6 +6,7 @@ const useToken = user => {
 
 
         const email = user?.user?.email;
+        console.log(email)
         const currentUser = { email: email };
         if (email) {
             fetch(` https://limitless-spire-51674.herokuapp.com/user/${email}`, {

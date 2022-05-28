@@ -48,7 +48,7 @@ const AddReview = () => {
 
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
-                                <span className="label-text">Product Name</span>
+                                <span className="label-text"> Name</span>
                             </label>
                             <input
                                 type="text"

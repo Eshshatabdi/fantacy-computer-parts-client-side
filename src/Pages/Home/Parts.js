@@ -6,7 +6,7 @@ const Parts = () => {
     const [parts] = useParts()
 
     return (
-        <div className='my-12'>
+        <div className='mt-12'>
             <h2 className="text-center text-4xl text-primary font-bold">
                 Our Products
 
