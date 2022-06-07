@@ -6,7 +6,7 @@
 * header,banner,product,footer done in home page.
 * in purchase page product detail information show.
 * My portfolio and blog are shown
-* In dashBoard make admin,add product,manage product,manageorder,my order shown
+* In dashBoard admin can make admin,add product,manage product,manage order.
 * there is a login and sign up page and also google log in.
 
 
