@@ -2,7 +2,7 @@
 ## Fantacy Computer Parts 
 ## live link:https://final-website-b7c99.web.app/contact
 ## Admin email: eshy@chowshury.com
-# Admin Password: 123456
+## Admin Password: 123456
 
 ## Client Side
 * header,banner,product,footer done in home page.
