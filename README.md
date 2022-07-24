@@ -1,9 +1,12 @@
 # 
 ## Fantacy Computer Parts 
 ## live link:https://final-website-b7c99.web.app/contact
+## Admin email: eshy@chowshury.com
+# Admin Password: 123456
 
 ## Client Side
 * header,banner,product,footer done in home page.
+* Allowing Customers to Create an Account, Browse Products, Order Products, Buy Products, Delete Products, Stripe Payment, & Write Reviews.
 * in purchase page product detail information show.
 * My portfolio and blog are shown
 * In dashBoard admin can make admin,add product,manage product,manage order.
